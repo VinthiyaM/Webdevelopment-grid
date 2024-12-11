@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid3</title>
+    <style>
+        .container{
+            display: inline-grid;
+            background-color: black;
+            grid-template-columns: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+            grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+            gap: 3px;
+            padding: 3px;
+        }
+       .div1{
+          background-color: white;
+          grid-column:1/2 ;
+          grid-row:1/4 ;
+       }
+       .div2{
+          background-color: white;
+          grid-column:2/3 ;
+          grid-row:1/4 ;
+       }
+       .div3{
+          background-color:yellow;
+          grid-column:3/5 ;
+          grid-row:1/4 ;
+       }
+       .div4{
+          background-color: white;
+          grid-column:5/7 ;
+          grid-row:1/4 ;
+       }
+       .div5{
+          background-color: white;
+          grid-column:7/9;
+          grid-row:1/4 ;
+       }
+       .div6{
+          background-color: white;
+          grid-column:9/10;
+          grid-row:1/2 ;
+       }
+       .div7{
+          background-color: white;
+          grid-column:9/10;
+          grid-row:2/3 ;
+       }
+       .div8{
+          background-color: white;
+          grid-column:9/10;
+          grid-row:3/4 ;
+       }
+       .div9{
+          background-color: white;
+          grid-column:10/11;
+          grid-row:1/2 ;
+       }
+       .div10{
+          background-color: white;
+          grid-column:10/11;
+          grid-row:2/3 ;
+       }
+       .div11{
+          background-color: blue;
+          grid-column:10/11;
+          grid-row:3/4 ;
+       }
+       .div12{
+          background-color: white;
+          grid-column:1/2;
+          grid-row:4/7 ;
+       }
+       .div13{
+          background-color: white;
+          grid-column:2/3;
+          grid-row:4/7 ;
+       }
+       .div14{
+          background-color: white;
+          grid-column:3/4;
+          grid-row:4/5 ;
+       }
+       .div15{
+          background-color: blue;
+          grid-column:3/4;
+          grid-row:5/6 ;
+       }
+       .div16{
+          background-color: blue;
+          grid-column:3/4;
+          grid-row:6/7 ;
+       }
+       .div17{
+          background-color: white;
+          grid-column:4/5;
+          grid-row:4/5 ;
+       }
+       .div18{
+          background-color: yellow;
+          grid-column:4/5;
+          grid-row:5/6 ;
+       }
+       .div19{
+          background-color: white;
+          grid-column:4/5;
+          grid-row:6/7 ;
+       }
+       .div20{
+          background-color: red;
+          grid-column:5/7;
+          grid-row:4/7 ;
+       }
+       .div21{
+          background-color: white;
+          grid-column:7/8;
+          grid-row:4/7 ;
+       }
+       .div22{
+          background-color: white;
+          grid-column:8/9;
+          grid-row:4/7 ;
+       }
+       .div23{
+          background-color: red;
+          grid-column:9/11;
+          grid-row:4/7 ;
+       }
+       .div24{
+          background-color: red;
+          grid-column:1/2;
+          grid-row:7/9 ;
+       }
+       .div26{
+          background-color: white;
+          grid-column:2/3;
+          grid-row:7/9 ;
+       }
+       .div27{
+          background-color: blue;
+          grid-column:3/5;
+          grid-row:7/9 ;
+       }
+       .div28{
+          background-color: white;
+          grid-column:5/7;
+          grid-row:7/9 ;
+       }
+       .div29{
+          background-color: white;
+          grid-column:7/9;
+          grid-row:7/8 ;
+       }
+       .div30{
+          background-color: white;
+          grid-column:7/9;
+          grid-row:8/9 ;
+       }
+       .div31{
+          background-color: white;
+          grid-column:9/11;
+          grid-row:7/9 ;
+       }
+       .div32{
+          background-color: yellow;
+          grid-column:1/2;
+          grid-row:9/10 ;
+       }
+       .div33{
+          background-color: white;
+          grid-column:2/3;
+          grid-row:9/10 ;
+       }
+       .div34{
+          background-color: white;
+          grid-column:3/5;
+          grid-row:9/10 ;
+       }
+       .div35{
+          background-color: blue;
+          grid-column:5/7;
+          grid-row:9/10 ;
+       }
+       .div36{
+          background-color: yellow;
+          grid-column:7/9;
+          grid-row:9/10 ;
+       }
+       .div37{
+          background-color: white;
+          grid-column:9/11;
+          grid-row:9/10 ;
+       }
+       .div38{
+          background-color: yellow;
+          grid-column:1/2;
+          grid-row:10/11 ;
+       }
+       .div39{
+          background-color: white;
+          grid-column:2/3;
+          grid-row:10/11 ;
+       }
+       .div40{
+          background-color: white;
+          grid-column:3/5;
+          grid-row:10/11 ;
+       }
+       .div41{
+          background-color: yellow;
+          grid-column:5/6;
+          grid-row:10/11 ;
+       }
+       .div42{
+          background-color:white;
+          grid-column:6/7;
+          grid-row:10/11 ;
+       }
+       .div43{
+          background-color:white;
+          grid-column:7/9;
+          grid-row:10/11 ;
+       }
+       .div44{
+          background-color:white;
+          grid-column:9/11;
+          grid-row:10/11 ;
+       }
+       .div45{
+          background-color:white;
+          grid-column:1/2;
+          grid-row:11/12 ;
+       }
+       .div46{
+          background-color:white;
+          grid-column:1/2;
+          grid-row:11/12 ;
+       }
+       .div47{
+          background-color:white;
+          grid-column:1/2;
+          grid-row:12/13 ;
+       }
+       .div49{
+          background-color:white;
+          grid-column:2/3;
+          grid-row:11/13 ;
+       }
+       .div50{
+          background-color:white;
+          grid-column:3/5;
+          grid-row:11/13 ;
+       }
+       .div51{
+          background-color:white;
+          grid-column:5/7;
+          grid-row:11/13 ;
+       }
+       .div52{
+          background-color:white;
+          grid-column:7/9;
+          grid-row:11/13 ;
+       }
+       .div53{
+          background-color:white;
+          grid-column:9/11;
+          grid-row:11/13 ;
+       }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+        <div class="div9"></div>
+        <div class="div10"></div>
+        <div class="div11"></div>
+        <div class="div12"></div>
+        <div class="div13"></div>
+        <div class="div14"></div>
+        <div class="div15"></div>
+        <div class="div16"></div>
+        <div class="div17"></div>
+        <div class="div18"></div>
+        <div class="div19"></div>
+        <div class="div20"></div>
+        <div class="div21"></div>
+        <div class="div22"></div>
+        <div class="div23"></div>
+        <div class="div24"></div>
+        <div class="div25"></div>
+        <div class="div26"></div>
+        <div class="div27"></div>
+        <div class="div28"></div>
+        <div class="div29"></div>
+        <div class="div30"></div>
+        <div class="div31"></div>
+        <div class="div32"></div>
+        <div class="div33"></div>
+        <div class="div34"></div>
+        <div class="div35"></div>
+        <div class="div36"></div>
+        <div class="div37"></div>
+        <div class="div38"></div>
+        <div class="div39"></div>
+        <div class="div40"></div>
+        <div class="div41"></div>
+        <div class="div42"></div>
+        <div class="div43"></div>
+        <div class="div44"></div>
+        <div class="div45"></div>
+        <div class="div46"></div>
+        <div class="div47"></div>
+        <div class="div48"></div>
+        <div class="div49"></div>
+        <div class="div50"></div>
+        <div class="div51"></div>
+        <div class="div52"></div>
+        <div class="div53"></div>
+    </div>
+</body>
+</html>
